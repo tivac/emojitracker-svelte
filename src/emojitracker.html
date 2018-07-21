@@ -1,0 +1,19 @@
+<div>😁😁😁</div>
+
+{#each $ids as id}
+    <div>
+        <pre>{$data[id].char} - {$data[id].score}</pre>
+    </div>
+{:else}
+No emojis loaded yet, hang on!
+{/each}
+
+
+
+<script>
+export default {
+    oncreate() {
+        console.log("Hello, world.");
+    }
+};
+</script>
